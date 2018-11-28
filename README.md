@@ -1,16 +1,71 @@
-# react-simple-show-more
+# React Simple Show More
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-simple-show-more here.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm-badge]: https://img.shields.io/npm/v/react-simple-show-more.png
+[npm]: https://www.npmjs.org/package/react-simple-show-more
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+
+Demo: https://elated-curran-7104e4.netlify.com/
+
+Very simple and lightweight `Show More` feature. It is in alpha testing. Please make an issue if you have any suggestion or feature request.
+
+## Table of contents
+- [Installation](#installation
+- [Overview](#overview)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Props](#props)
+- [Contribution](#contribution)
+
+
+## Installation
+```
+npm i react-simple-show-more
+```
+
+## Overview
+Very simple Show more feature
+
+## Usage
+Super easy to use:
+```
+import ShowMore from "react-simple-show-more"
+
+class YourComponent extends Component {
+  render() {
+    return (
+      <ShowMore
+        text="Very long text"
+        length={170}
+      />
+    );
+  }
+}
+
+```
+
+## Demo
+You can see demo via this [https://elated-curran-7104e4.netlify.com/](https://elated-curran-7104e4.netlify.com/)  
+
+
+## Props
+
+| Parameter   | value          | is required |         default         |
+|-------------|----------------|:-----------:|:-----------------------:|
+| text        |    string      |     yes     |                         |
+| length      | string, number |     no      |          170            |
+| tag         |    string      |     no      |          span           |
+| className   |    string      |     no      |          ''             |
+| ellipsis    |    string      |     no      |          '...'          |
+| style       |    object      |     no      |          {}             |
+| enabled     |    boolean     |     no      |          true           |
+
+
+## Contribution  
+All helps are welcome. Please open a PR and describe what do you want to improve. 
+
+## Issues  
+Please create an issue at [https://github.com/nvh95/react-simple-show-more/issues](https://github.com/nvh95/react-simple-show-more/issues). I will spend time to help you.
