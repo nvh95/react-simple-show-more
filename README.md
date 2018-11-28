@@ -10,10 +10,12 @@
 
 Demo: https://elated-curran-7104e4.netlify.com/
 
-Very simple and lightweight `Show More` feature. It is in alpha testing. Please make an issue if you have any suggestion or feature request.
+Very simple and lightweight `Show More` feature. 
+
+It is in alpha testing. Please make an issue if you have any suggestion or feature request.
 
 ## Table of contents
-- [Installation](#installation
+- [Installation](#installation)
 - [Overview](#overview)
 - [Usage](#usage)
 - [Demo](#demo)
@@ -27,7 +29,9 @@ npm i react-simple-show-more
 ```
 
 ## Overview
-Very simple Show more feature
+Very simple Show more feature.   
+This package guarantees you not to collapse in middle of the word.  
+For example: with length `23` = "I just want to say Hello" => "I just want to say" (not "I just want to say Hell")
 
 ## Usage
 Super easy to use:
@@ -57,7 +61,7 @@ You can see demo via this [https://elated-curran-7104e4.netlify.com/](https://el
 |-------------|----------------|:-----------:|:-----------------------:|
 | text        |    string      |     yes     |                         |
 | length      | string, number |     no      |          170            |
-| tag         |    string      |     no      |          span           |
+| tag         |    string      |     no      |          'span'         |
 | className   |    string      |     no      |          ''             |
 | ellipsis    |    string      |     no      |          '...'          |
 | style       |    object      |     no      |          {}             |

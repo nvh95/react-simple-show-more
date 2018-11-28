@@ -49,7 +49,7 @@ class ShowMore extends Component {
             className={className}
             onClick={this.toggleShowMore}
             style={style}
-          >{showMore ? 'Show less' : 'Show more'}
+          >{showMore ? ' Show less' : ' Show more'}
           </Tag>
         </React.Fragment>
       );
