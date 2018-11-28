@@ -1,7 +1,7 @@
 {
   "name": "react-simple-show-more",
   "version": "1.0.0",
-  "description": "react-simple-show-more React component",
+  "description": "Simple Show More Component for React",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -28,11 +28,18 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
-  "author": "",
-  "homepage": "",
+  "author": "nvh95",
+  "homepage": "https://github.com/nvh95/react-simple-show-more",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvh95/react-simple-show-more.git"
+  },
   "keywords": [
-    "react-component"
+    "react",
+    "react-show-more",
+    "show-more",
+    "show-less",
+    "show"
   ]
 }
