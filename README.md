@@ -43,7 +43,6 @@ class YourComponent extends Component {
     return (
       <ShowMore
         text="Very long text"
-        length={170}
       />
     );
   }
@@ -51,22 +50,57 @@ class YourComponent extends Component {
 
 ```
 
+You can also configure it as your demand:
+```
+import ShowMore from "react-simple-show-more"
+
+class YourComponent extends Component {
+  render() {
+    return (
+      <ShowMore
+        text="Very long text"
+        length={170}
+        showMoreLabel=" Expand"
+        showLessLabel=" Collapse"
+        tag="a"
+        className="text-blue"
+        ellipsis="..."
+        style={{
+          cursor: 'pointer',
+          color: 'green',
+          fontWeight: 'bold',
+        }}
+        enabled
+      />
+    );
+  }
+}
+
+```
 ## Demo
 You can see demo via this [https://elated-curran-7104e4.netlify.com/](https://elated-curran-7104e4.netlify.com/)  
 
 
 ## Props
 
-| Parameter   | value          | is required |         default         |
-|-------------|----------------|:-----------:|:-----------------------:|
-| text        |    string      |     yes     |                         |
-| length      | string, number |     no      |          170            |
-| tag         |    string      |     no      |          'span'         |
-| className   |    string      |     no      |          ''             |
-| ellipsis    |    string      |     no      |          '...'          |
-| style       |    object      |     no      |          {}             |
-| enabled     |    boolean     |     no      |          true           |
-
+| Parameter     | value          | is required |         default         |
+|---------------|----------------|:-----------:|:-----------------------:|
+| text          |    string      |     yes     |                         |
+| length        | string, number |     no      |          170            |
+| showMoreLabel |    string      |     no      |       'Show more'       |
+| showLessLabel |    string      |     no      |       'Show less'       |
+| tag           |    string      |     no      |          'span'         |
+| className     |    string      |     no      |          ''             |
+| ellipsis      |    string      |     no      |          '...'          |
+| style         |    object      |     no      |       default Style     |
+| enabled       |    boolean     |     no      |          true           |
+ 
+```
+defaultStyle = {
+  cursor: 'pointer',
+  color: '#007bff',
+}
+```
 
 ## Contribution  
 All helps are welcome. Please open a PR and describe what do you want to improve. 

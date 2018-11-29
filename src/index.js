@@ -10,6 +10,8 @@ class ShowMore extends Component {
     tag: PropTypes.string,
     style: PropTypes.object,
     ellipsis: PropTypes.string,
+    showMoreLabel: PropTypes.string,
+    showLessLabel: PropTypes.string,
   }
 
   static defaultProps = {
@@ -17,8 +19,13 @@ class ShowMore extends Component {
     length: 170,
     className: '',
     tag: 'span',
-    style: {},
-    ellipsis: '...'
+    style: {
+      cursor: 'pointer',
+      color: '#007bff',
+    },
+    ellipsis: '...',
+    showMoreLabel: ' Show more',
+    showLessLabel: ' Show less',
   }
   constructor(props) {
     super(props);
@@ -38,7 +45,7 @@ class ShowMore extends Component {
 
   render() {
     const { showMore } = this.state;
-    const { text, enabled, className, style, ellipsis } = this.props;
+    const { text, enabled, className, style, ellipsis, showMoreLabel, showLessLabel } = this.props;
     const Tag = this.props.tag;
     if (enabled && this.shouldTruncateString(text)) {
       return (
@@ -49,7 +56,7 @@ class ShowMore extends Component {
             className={className}
             onClick={this.toggleShowMore}
             style={style}
-          >{showMore ? ' Show less' : ' Show more'}
+          >{showMore ? showLessLabel : showMoreLabel}
           </Tag>
         </React.Fragment>
       );
